@@ -2,7 +2,6 @@
 }
 
 html {
-    color: rgba(0, 0, 0, 1);
 }
 
 * {
@@ -12,6 +11,157 @@ html {
 body {
     margin: 0;
     font-family: "Roboto", serif;
-    background-color: rgba(0, 0, 0, 1);
     padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+thead tr {
+    height: 50px;
+    background: rgba(244, 245, 247, 1);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+thead tr th:first-child {
+    text-align: left;
+    padding-left: 5.5rem;
+}
+
+thead, tr:not(:last-child) {
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+}
+
+tbody tr {
+    height: 100px;
+}
+
+.product-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-wrapper img {
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+}
+
+.amount-wrapper {
+    display: inline-flex;
+    max-width: fit-content;
+}
+
+.amount-wrapper button {
+    all: unset;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1px;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+}
+
+.amount-wrapper button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.amount-wrapper input {
+    width: 2rem;
+    border: unset;
+    text-align: center;
+    font: inherit;
+}
+
+.amount-wrapper input:focus-within {
+    outline: none;
+}
+
+.amount-wrapper input::-webkit-outer-spin-button,
+.amount-wrapper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.amount-wrapper input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+[class*="btn-"] {
+    all: unset;
+    padding: 10px 40px;
+    border: 1px solid rgba(43, 43, 43, 1);
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 450px) {
+    [class*="btn-"] {
+        flex: 1 1 100%;
+    }
+}
+
+.btn-black {
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.table-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkout-wrapper {
+    margin-top: 50px;
+    max-width: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: flex-end;
+}
+
+.checkout {
+    padding: 30px;
+    width: 300px;
+    max-width: 100%;
+    background: rgba(249, 249, 249, 1);
+    border: 1px solid rgba(193, 193, 193, 1);
+}
+
+.checkout hr {
+    margin: 25px 0;
+}
+
+.checkout-row {
+    display: flex;
+    justify-content: space-between;
 }

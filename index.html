@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>product_list</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,109 @@
 </head>
 <body>
 <main>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="product-wrapper bold">
+                        <img src="assets/images/webp/cart-01.webp" alt="plant_pot"/>
+                        Plant pots
+                    </div>
+                </td>
+                <td>$17.00</td>
+                <td>
+                    <div class="amount-wrapper">
+                        <button type="button">
+                            -
+                        </button>
+                        <input type="number" value="2"/>
+                        <button type="button">
+                            +
+                        </button>
+                    </div>
+                </td>
+                <td class="bold">
+                    £635.00
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-wrapper bold">
+                        <img src="assets/images/webp/cart-02.webp" alt="teapot"/>
+                        Teapot with black tea
+                    </div>
+                </td>
+                <td>$14.00</td>
+                <td>
+                    <div class="amount-wrapper">
+                        <button type="button">
+                            -
+                        </button>
+                        <input type="number" value="2"/>
+                        <button type="button">
+                            +
+                        </button>
+                    </div>
+                </td>
+                <td class="bold">
+                    £635.00
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-wrapper bold">
+                        <img src="assets/images/webp/cart-02.webp" alt="chair"/>
+                        Wooden chair
+                    </div>
+                </td>
+                <td>$14.00</td>
+                <td>
+                    <div class="amount-wrapper">
+                        <button type="button">
+                            -
+                        </button>
+                        <input type="number" value="2"/>
+                        <button type="button">
+                            +
+                        </button>
+                    </div>
+                </td>
+                <td class="bold">
+                    £635.00
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-controls">
+        <button type="button" class="btn-black">Continue Shopping</button>
+        <button type="button" class="btn-white">Update Cart</button>
+    </div>
+    <div class="checkout-wrapper">
+        <div class="checkout">
+            <div class="checkout-row">
+                <div class="text bold">Subtotal</div>
+                <div class="price">$87.00</div>
+            </div>
+            <hr/>
+            <div class="checkout-row">
+                <div class="text bold">Total</div>
+                <div class="price">$87.00</div>
+            </div>
+        </div>
+        <button type="button" class="btn-black">
+            Proceed to checkout
+        </button>
+    </div>
 </main>
 </body>
 </html>
